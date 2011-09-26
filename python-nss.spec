@@ -1,12 +1,12 @@
 Summary:	Python bindings for NSS and NSPR
 Summary(pl.UTF-8):	Wiązania Pythona do bibliotek NSS i NSPR
 Name:		python-nss
-Version:	0.11
+Version:	0.12
 Release:	1
 License:	MPL v1.1 or GPL v2+ or LGPL v2+
 Group:		Development/Languages/Python
-Source0:	http://ftp.mozilla.org/pub/mozilla.org/security/python-nss/releases/PYNSS_RELEASE_0_11_0/src/%{name}-%{version}.tar.bz2
-# Source0-md5:	05a87f479d469d03af6c070a48bcbd8c
+Source0:	http://ftp.mozilla.org/pub/mozilla.org/security/python-nss/releases/PYNSS_RELEASE_0_12_0/src/%{name}-%{version}.tar.bz2
+# Source0-md5:	f47ca0cad3504740ba3c8fde11715b29
 URL:		http://www.mozilla.org/projects/security/pki/nss/
 BuildRequires:	nspr-devel >= 4
 BuildRequires:	nss-devel >= 3
