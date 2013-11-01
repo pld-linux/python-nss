@@ -1,0 +1,20 @@
+--- python-nss-0.14.1/src/py_nss.c.orig	2013-06-13 15:58:32.000000000 +0200
++++ python-nss-0.14.1/src/py_nss.c	2013-11-01 18:55:12.905646633 +0100
+@@ -22258,7 +22258,7 @@
+         PyObject *py_err_msg = PyString_FromFormat("Failed to %s %s (%lx) pkcs12 cipher",
+                                                    enabled ? _("enable") : _("disable"),
+                                                    PyString_AsString(py_cipher_name), cipher);
+-        set_nspr_error(PyString_AsString(py_err_msg));
++        set_nspr_error("%s", PyString_AsString(py_err_msg));
+         Py_DECREF(py_cipher_name);
+         Py_DECREF(py_err_msg);
+         return NULL;
+@@ -22299,7 +22299,7 @@
+             PyObject *py_cipher_name = pkcs12_cipher_to_pystr(cipher);
+             PyObject *py_err_msg = PyString_FromFormat("Failed to enable %s (%lx) pkcs12 cipher",
+                                                        PyString_AsString(py_cipher_name), cipher);
+-            set_nspr_error(PyString_AsString(py_err_msg));
++            set_nspr_error("%s", PyString_AsString(py_err_msg));
+             Py_DECREF(py_cipher_name);
+             Py_DECREF(py_err_msg);
+             return NULL;
