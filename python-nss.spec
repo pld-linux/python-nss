@@ -7,7 +7,7 @@ Summary:	Python 2 bindings for NSS and NSPR
 Summary(pl.UTF-8):	Wiązania Pythona 2 do bibliotek NSS i NSPR
 Name:		python-nss
 Version:	1.0.1
-Release:	1
+Release:	2
 License:	MPL v2.0 or GPL v2+ or LGPL v2+
 Group:		Development/Languages/Python
 Source0:	http://ftp.mozilla.org/pub/security/python-nss/releases/PYNSS_RELEASE_1_0_1/src/%{name}-%{version}.tar.bz2
