@@ -1,0 +1,26 @@
+--- a/src/py_nspr_error.c~	2021-08-02 19:23:55.000000000 -0500
++++ b/src/py_nspr_error.c	2023-07-10 16:01:55.170111358 -0500
+@@ -183,11 +183,7 @@
+     PyObject *exception_obj = NULL;
+ 
+     if (format) {
+-#ifdef HAVE_STDARG_PROTOTYPES
+         va_start(vargs, format);
+-#else
+-        va_start(vargs);
+-#endif
+         error_message = PyUnicode_FromFormatV(format, vargs);
+         va_end(vargs);
+     }
+@@ -219,11 +215,7 @@
+     PyObject *exception_obj = NULL;
+ 
+     if (format) {
+-#ifdef HAVE_STDARG_PROTOTYPES
+         va_start(vargs, format);
+-#else
+-        va_start(vargs);
+-#endif
+         error_message = PyUnicode_FromFormatV(format, vargs);
+         va_end(vargs);
+     }
